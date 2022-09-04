@@ -1,0 +1,121 @@
+
+
+.container {
+    display: flex;
+    padding: 32px 0 0 296px;
+    max-width: 1624px;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 472px;
+    border: 1px solid #C1C1C1;
+    overflow-x: hidden;
+    border-top: 0;
+    border-bottom: 1px solid var(--color-bg);
+
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-items: center;
+    width: 256px;
+    height: 500px;
+    padding-top: 26px;
+    padding-bottom: 100px;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4A4A4F;
+}
+
+.heshtegs {
+    display: flex;
+    text-align: left;
+    justify-items: center;
+    width: 256px;
+    padding-top: 26px;
+    color: #2244CC;
+}
+
+
+
+
+
+
+.banner::after {
+    content: ''; /* Выводим элемент */
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0;
+    bottom: 0; /* Положение элемента */
+    width: 100%; /* Ширина градиента*/
+    height: 15%; /* Высота родителя */
+    /* Градиент */
+    background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.0), #fff 100%);
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.0), #fff 100%);
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0, 0.0), #fff 100%);
+    background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0, 0.0), #fff 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), #fff 100%);
+}
+.banner::-webkit-scrollbar {
+    display: inline;
+}
+
+.banner {
+    scrollbar-width: var(--scrollbarWidth);
+    scrollbar-height: 2px;
+    scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+}
+.banner::-webkit-scrollbar {
+    width: var(--scrollbarWidth);
+
+}
+
+.banner::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarThumb);
+    border-radius: var(--scrollbarBorderRadius);
+    border: var(--scrollbarBorder);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding-left: 100px;
+    }
+}
+
+/* =================== MEDIA QUERIES (SMALL DEVICES) ================ */
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding-left: 16px;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none!important;
+    }
+
+}
