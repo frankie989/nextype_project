@@ -58,7 +58,7 @@
 }
 
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 550px) {
     .menu {
         margin-left: 16px;
         width: 359px;

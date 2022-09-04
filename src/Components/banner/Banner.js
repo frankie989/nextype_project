@@ -76,6 +76,10 @@ const Banner = (props) => {
                             slidesPerView: 2,
                             spaceBetween: 20
                         },
+                        500: {
+                            slidesPerView: 1,
+                            spaceBetween: 20
+                        },
                     }}
                 >
                     {
